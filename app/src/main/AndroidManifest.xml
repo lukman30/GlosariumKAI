@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pc_render.glosairumapi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+
+        android:name="luk.soft.glosarium.config.MyApplication_p"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_u"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name="luk.soft.glosarium.Menu"
+
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="luk.soft.glosarium.isimenu.AcronymandAbbreviationEnglish" />
+        <activity android:name="luk.soft.glosarium.isimenu.AcronymandAbbreviationIndonesia" />
+        <activity android:name="luk.soft.glosarium.isimenu.TecnicalDefinitions" />
+        <activity android:name="luk.soft.glosarium.isimenu.TrainPart" />
+        <activity android:name="luk.soft.glosarium.isimenu.TermandMeanings" />
+
+
+        <!-- -->
+
+        <activity
+            android:name="luk.soft.glosarium.listviewABE.DepanABI"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="luk.soft.glosarium.listviewABE.DepanABE"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="luk.soft.glosarium.listviewABE.DepanTD"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="luk.soft.glosarium.listviewABE.DepanTP"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="luk.soft.glosarium.listviewABE.DepanTM"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+    </application>
+
+</manifest>

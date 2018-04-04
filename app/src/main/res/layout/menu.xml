@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="luk.soft.glosarium.backup.MainActivity">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:src="@drawable/ptkaii"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:gravity="top"-->
+                    <!--android:padding="16dp">-->
+
+                    <!--<ImageView-->
+
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/menu"-->
+                        <!--android:layout_gravity="left"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+
+
+
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/linear"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:elevation="8dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--&gt;-->
+
+                    <!--<customfonts.MyEditText-->
+                        <!--android:id="@+id/autotext"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/rect"-->
+                        <!--android:hint="Search..."-->
+                        <!--android:textColorHint="@color/colorSub"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:textColor="@color/colorTex"-->
+                        <!--android:padding="15dp"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:drawableRight="@drawable/search"-->
+                        <!--android:elevation="8dp"-->
+                        <!--/>-->
+
+
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+
+
+
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_below="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+
+
+
+                <customfonts.MyTextView
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Menu"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16dp"
+                    android:textColor="#757575"
+                    />
+                <View
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.1dp"
+                    android:background="#db4437"
+
+                    />
+                <!--android:layout_marginLeft="150dp"-->
+                <!--android:layout_marginRight="150dp"-->
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Term and Meanings"
+                    android:background="@drawable/round"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Acronym and Abbreviation (English)"
+                    android:background="@drawable/round"
+                    android:textColor="#fff"/>
+
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Acronym and Abbreviation (Indonesia)"
+                    android:background="@drawable/round"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Train Part"
+                    android:background="@drawable/round"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Tecnical Definitions"
+                    android:background="@drawable/round"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/u"
+                    android:layout_marginBottom="40dp"/>
+
+            </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

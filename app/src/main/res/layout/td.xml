@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="luk.soft.glosarium.backup.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="285dp"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/menu" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:bottomRightRadius="6dp"
+                    android:bottomLeftRadius="6dp"
+                    android:topLeftRadius="6dp"
+                    android:topRightRadius="6dp"
+                    android:id="@+id/linear21"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoComplete"
+                            android:layout_width="0dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="1"
+                            android:hint="Masukkan Pencarian..."
+                            android:padding="15dp"
+                            android:textSize="13dp" />
+
+                        <requestFocus />
+                        <!--<EditText-->
+                        <!--android:gravity="center"-->
+                        <!--android:id="@+id/pencarian"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/rect"-->
+                        <!--android:elevation="8dp"-->
+                        <!--android:hint="Masukkan NIM untuk melihat data..."-->
+
+                        <!--android:padding="15dp"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:textColorHint="@color/colorPrimary"-->
+                        <!--android:textSize="13dp" />-->
+
+
+                        <ImageView
+
+                            android:id="@+id/btnCari"
+                            android:layout_width="49dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="-1dp"
+                            android:background="@drawable/search1"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_search_white_24dp" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!--<customfonts.MyEditText-->
+                <!--android:id="@+id/autotext"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/rect"-->
+                <!--android:hint="Search..."-->
+                <!--android:textColorHint="@color/colorSub"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="@color/colorTex"-->
+                <!--android:padding="15dp"-->
+                <!--android:maxLines="1"-->
+                <!--android:drawableRight="@drawable/search"-->
+                <!--android:elevation="8dp"-->
+                <!--/>-->
+
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cover"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <!--<View-->
+
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1.1dp"-->
+                <!--android:background="@color/colorAccent" />-->
+
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="Tecnical Definition"
+                    android:textColor="#757575"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#fff"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/newsimage1"
+                                android:layout_width="45px"
+                                android:layout_height="45px"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/glosarium_icon" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/terms1"
+                                android:layout_width="210dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="16dp"
+                                android:layout_weight="1"
+                                android:text="TERMS :"
+                                android:textColor="@color/listsub1"
+                                android:textSize="14dp" />
+
+
+
+                            <!--<ImageView-->
+                            <!--android:id="@+id/more"-->
+                            <!--android:layout_width="15dp"-->
+                            <!--android:layout_height="22dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/more"-->
+                            <!--android:visibility="invisible" />-->
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginLeft="60dp"
+                            android:textStyle="italic"
+                            android:id="@+id/terms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="0.6"
+                            android:text="terms"
+                            android:textColor="@color/listsub1"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.1dp"
+                                    android:background="@color/colorAccent" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/newsimage31"
+                                    android:layout_width="45px"
+                                    android:layout_height="45px"
+                                    android:scaleType="centerCrop"
+                                    android:src="@mipmap/glosarium_icon" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:id="@+id/m"
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_weight="1"
+                                    android:text="MEANING :"
+                                    android:textColor="@color/listsub1"
+                                    android:textSize="14dp" />
+
+
+
+                                <!--<ImageView-->
+                                <!--android:id="@+id/more"-->
+                                <!--android:layout_width="15dp"-->
+                                <!--android:layout_height="22dp"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:src="@drawable/more"-->
+                                <!--android:visibility="invisible" />-->
+                            </LinearLayout>
+                            <TextView
+                                android:layout_marginLeft="60dp"
+                                android:textStyle="italic"
+                                android:id="@+id/isimeaning"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="0.6"
+                                android:text="meaning"
+                                android:textColor="@color/listsub1"
+                                android:textSize="14dp" />
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
